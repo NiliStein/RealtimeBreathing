@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{e518eda4-be90-4f48-8f1a-01ca7d789bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\cv-plot">
+      <UniqueIdentifier>{3d6082c6-a930-4303-b29a-75456cf9b774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cv-plot">
+      <UniqueIdentifier>{4a0ff287-96af-4700-8b43-4da52943ea51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{fcbe69cf-aa8b-4854-8546-e0666b566f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\cv-plot\core">
+      <UniqueIdentifier>{f85b4c36-f835-4281-b40f-86f8254468b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\cv-plot\drawables">
+      <UniqueIdentifier>{f8121b1c-e038-48a0-8284-1add2c45f5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\cv-plot\gui">
+      <UniqueIdentifier>{4b17da03-b537-49e1-981c-044fbfa150a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\cv-plot\imp">
+      <UniqueIdentifier>{ecc84247-fa6f-400b-ac1f-638eafb868a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\cv-plot\Internal">
+      <UniqueIdentifier>{a6a18062-38e0-48da-a972-f3211beefb5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense">
+      <UniqueIdentifier>{8f313ca3-495d-449d-8167-7a35aa894c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\include">
+      <UniqueIdentifier>{8fe1b963-a5ce-47bb-a2e0-e72e78d6acce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\include\librealsense2">
+      <UniqueIdentifier>{29fe882a-b25a-4240-9fed-557f45a32898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\include\librealsense2\hpp">
+      <UniqueIdentifier>{1b533aa8-f4e0-4cb0-a24e-b23c6693ede8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\include\librealsense2\h">
+      <UniqueIdentifier>{8626f991-5f7b-4b5f-9aaf-e5f3349f4807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\include\librealsense2-gl">
+      <UniqueIdentifier>{c73b64d3-2089-4f98-839e-4695025c558b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\third party">
+      <UniqueIdentifier>{f5fe239d-b1f9-41cd-abce-a0ac85e3090a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\third party\Imgui">
+      <UniqueIdentifier>{954c8bbf-0614-4885-b411-1dd7a13003d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\common">
+      <UniqueIdentifier>{07cf7398-e17e-4e3c-9ede-55a51612295d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\third party\glfw">
+      <UniqueIdentifier>{dda0de7f-b180-4e4c-b148-7b290c0d9a96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\third party\glad">
+      <UniqueIdentifier>{bdf679d6-1008-4f23-8c56-061ded21622a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\third party\glfw\include">
+      <UniqueIdentifier>{a1622a6a-9a74-4570-924e-eff73b38ca19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third party">
+      <UniqueIdentifier>{31fd9176-15fa-4e42-8883-ffa03ac6c3f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third party\Imgui">
+      <UniqueIdentifier>{0ff58086-7d59-4a7b-afdb-3d60b499960a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third party\glfw">
+      <UniqueIdentifier>{6a0d9fc8-3a22-4866-ad46-b5f33679e296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third party\glad">
+      <UniqueIdentifier>{119a96c2-6cbb-44c7-bd74-e885b593d11b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rs">
+      <UniqueIdentifier>{40669b20-6a5f-4da4-b56c-025ff443da77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third party\tinyfiledialogs">
+      <UniqueIdentifier>{45463532-985e-4594-84be-8428eeb76b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\librealsense\third party\tinyfiledialogs">
+      <UniqueIdentifier>{eb4f8ece-0529-4aa5-b231-ee3c20b548bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\rb_aux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rb-gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\cv-plot-1.2\CvPlot\src\cvplot.cpp">
+      <Filter>Source Files\cv-plot</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\librealsense\third-party\imgui\imgui.cpp">
+      <Filter>Source Files\third party\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\librealsense\third-party\imgui\imgui_impl_glfw.cpp">
+      <Filter>Source Files\third party\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\librealsense\third-party\glad\glad.c">
+      <Filter>Source Files\third party\glad</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\librealsense\third-party\imgui\imgui_draw.cpp">
+      <Filter>Source Files\third party\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\librealsense\common\os.cpp">
+      <Filter>Source Files\rs</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\librealsense\third-party\tinyfiledialogs\tinyfiledialogs.c">
+      <Filter>Source Files\third party\tinyfiledialogs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\example.hpp">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rb_aux.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core.h">
+      <Filter>Header Files\include\cv-plot</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\cvplot.h">
+      <Filter>Header Files\include\cv-plot</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui.h">
+      <Filter>Header Files\include\cv-plot</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\libdef.h">
+      <Filter>Header Files\include\cv-plot</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\version.h">
+      <Filter>Header Files\include\cv-plot</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Axes.h">
+      <Filter>Header Files\include\cv-plot\core</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Drawable.h">
+      <Filter>Header Files\include\cv-plot\core</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\DrawableDeque.h">
+      <Filter>Header Files\include\cv-plot\core</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\makeAxes.h">
+      <Filter>Header Files\include\cv-plot\core</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Projection.h">
+      <Filter>Header Files\include\cv-plot\core</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\RenderTarget.h">
+      <Filter>Header Files\include\cv-plot\core</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Transformation.h">
+      <Filter>Header Files\include\cv-plot\core</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Border.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Group.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\HorizontalGrid.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\HorizontalLine.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Image.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\LineBase.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\LineType.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\MarkerType.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Series.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Title.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\VerticalGrid.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\VerticalLine.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\XAxis.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\XLabel.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\YAxis.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\YLabel.h">
+      <Filter>Header Files\include\cv-plot\drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\MouseAdapter.h">
+      <Filter>Header Files\include\cv-plot\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\MouseEvent.h">
+      <Filter>Header Files\include\cv-plot\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\show.h">
+      <Filter>Header Files\include\cv-plot\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\Window.h">
+      <Filter>Header Files\include\cv-plot\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Axes.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Border.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\cvplot.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Drawable.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\DrawableDeque.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Group.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\HorizontalGrid.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\HorizontalLine.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Image.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\LineBase.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\makeAxes.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\MouseAdapter.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Series.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Title.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\util.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\version.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\VerticalGrid.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\VerticalLine.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\XAxis.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\XLabel.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\YAxis.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\YLabel.ipp">
+      <Filter>Header Files\include\cv-plot\imp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\LinearProjection.h">
+      <Filter>Header Files\include\cv-plot\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\no_warning.h">
+      <Filter>Header Files\include\cv-plot\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\Pimpl.h">
+      <Filter>Header Files\include\cv-plot\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\RawProjection.h">
+      <Filter>Header Files\include\cv-plot\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\util.h">
+      <Filter>Header Files\include\cv-plot\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_advanced_mode_command.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_config.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_context.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_device.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_frame.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_internal.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_option.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_pipeline.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_processing.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_record_playback.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_sensor.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_types.h">
+      <Filter>Header Files\librealsense\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_context.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_device.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_export.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_frame.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_internal.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_options.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_pipeline.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_processing.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_record_playback.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_sensor.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_types.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs.h">
+      <Filter>Header Files\librealsense\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs_advanced_mode.h">
+      <Filter>Header Files\librealsense\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs_advanced_mode.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rsutil.h">
+      <Filter>Header Files\librealsense\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2-gl\rs_processing_gl.h">
+      <Filter>Header Files\librealsense\include\librealsense2-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\include\librealsense2-gl\rs_processing_gl.hpp">
+      <Filter>Header Files\librealsense\include\librealsense2-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\third-party\imgui\imgui.h">
+      <Filter>Header Files\librealsense\third party\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\third-party\imgui\imgui_impl_glfw.h">
+      <Filter>Header Files\librealsense\third party\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\common\os.h">
+      <Filter>Header Files\librealsense\common</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\third-party\glad\glad\glad.h">
+      <Filter>Header Files\librealsense\third party\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\third-party\glfw\include\GLFW\glfw3.h">
+      <Filter>Header Files\librealsense\third party\glfw\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\third-party\tinyfiledialogs\tinyfiledialogs.h">
+      <Filter>Header Files\librealsense\third party\tinyfiledialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\librealsense\third-party\stb_image_write.h">
+      <Filter>Header Files\librealsense\third party</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

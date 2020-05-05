@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DE34EE7C-688C-44B8-9B59-D5D4A97B6EBB}</ProjectGuid>
+    <RootNamespace>RealtimeBreathing</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LibraryPath>.\dependencies;$(OPEN_CV)\build\lib\Release\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\dependencies\cv-plot-1.2\CvPlot\inc;..\dependencies;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";INTERNAL_FW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\RealtimeBreathing\cv-plot-1.2\CvPlot\inc;..\realsense2;..\src;..\examples\align\rs-align;..\examples\align\..\..\common;..\examples\align\..\..\third-party\imgui;..\include;..\third-party\glfw\include;..\common;..\third-party\glad;..\third-party;..\build;..\third-party\tinyfiledialogs;$(OPEN_CV)\build\install\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>
+      </SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <UseFullPaths>false</UseFullPaths>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\build\third-party\glfw\src\Debug\glfw3d.lib;opengl32.lib;glu32.lib;..\build\src\gl\Debug\realsense2-gld.lib;..\build\common\fw\Debug\uvc_fwd.lib;..\build\Debug\realsense2d.lib;..\build\common\fw\uvc_fw.res;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(OPEN_CV)\build\install\x64\vc15\lib\opencv_world420d.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\dependencies\librealsense\include\librealsense2\hpp;.\dependencies\librealsense\include\librealsense2\h;.\dependencies\librealsense\common;.\dependencies\librealsense\third-party;.\dependencies\librealsense\third-party\tinyfiledialogs;.\dependencies\librealsense\third-party\imgui;.\dependencies\librealsense\third-party\glad;.\dependencies\librealsense\third-party\glfw\include;.\dependencies\librealsense\include;.\include;.\dependencies\cv-plot-1.2\CvPlot\inc;.\dependencies;$(OPEN_CV)\build\install\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";INTERNAL_FW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>.\dependencies\glfw3.lib;opengl32.lib;glu32.lib;.\dependencies\realsense2-gl.lib;.\dependencies\uvc_fw.lib;.\dependencies\realsense2.lib;.\dependencies\uvc_fw.res;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";INTERNAL_FW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\dependencies\librealsense\include\librealsense2\hpp;.\dependencies\librealsense\include\librealsense2\h;.\dependencies\librealsense\common;.\dependencies\librealsense\third-party;.\dependencies\librealsense\third-party\tinyfiledialogs;.\dependencies\librealsense\third-party\imgui;.\dependencies\librealsense\third-party\glad;.\dependencies\librealsense\third-party\glfw\include;.\dependencies\librealsense\include;.\include;.\dependencies\cv-plot-1.2\CvPlot\inc;.\dependencies;$(OPEN_CV)\build\install\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\dependencies\glfw3.lib;opengl32.lib;glu32.lib;.\dependencies\realsense2-gl.lib;.\dependencies\uvc_fw.lib;.\dependencies\realsense2.lib;.\dependencies\uvc_fw.res;$(OPEN_CV)\build\install\x64\vc15\lib\opencv_world420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dependencies\cv-plot-1.2\CvPlot\src\cvplot.cpp" />
+    <ClCompile Include="dependencies\librealsense\common\os.cpp" />
+    <ClCompile Include="dependencies\librealsense\third-party\glad\glad.c" />
+    <ClCompile Include="dependencies\librealsense\third-party\imgui\imgui.cpp" />
+    <ClCompile Include="dependencies\librealsense\third-party\imgui\imgui_draw.cpp" />
+    <ClCompile Include="dependencies\librealsense\third-party\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="dependencies\librealsense\third-party\tinyfiledialogs\tinyfiledialogs.c" />
+    <ClCompile Include="src\rb-gui.cpp" />
+    <ClCompile Include="src\rb_aux.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Axes.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Drawable.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\DrawableDeque.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\makeAxes.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Projection.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\RenderTarget.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\core\Transformation.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\cvplot.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Border.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Group.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\HorizontalGrid.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\HorizontalLine.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Image.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\LineBase.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\LineType.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\MarkerType.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Series.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\Title.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\VerticalGrid.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\VerticalLine.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\XAxis.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\XLabel.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\YAxis.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\drawables\YLabel.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\MouseAdapter.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\MouseEvent.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\show.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\gui\Window.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Axes.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Border.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\cvplot.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Drawable.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\DrawableDeque.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Group.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\HorizontalGrid.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\HorizontalLine.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Image.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\LineBase.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\makeAxes.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\MouseAdapter.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Series.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\Title.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\util.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\version.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\VerticalGrid.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\VerticalLine.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\XAxis.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\XLabel.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\YAxis.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\imp\YLabel.ipp" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\LinearProjection.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\no_warning.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\Pimpl.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\RawProjection.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\Internal\util.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\libdef.h" />
+    <ClInclude Include="dependencies\cv-plot-1.2\CvPlot\inc\CvPlot\version.h" />
+    <ClInclude Include="dependencies\librealsense\common\os.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2-gl\rs_processing_gl.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2-gl\rs_processing_gl.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_context.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_device.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_export.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_frame.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_internal.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_options.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_pipeline.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_processing.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_record_playback.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_sensor.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\hpp\rs_types.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_advanced_mode_command.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_config.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_context.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_device.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_frame.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_internal.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_option.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_pipeline.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_processing.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_record_playback.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_sensor.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\h\rs_types.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs.hpp" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rsutil.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs_advanced_mode.h" />
+    <ClInclude Include="dependencies\librealsense\include\librealsense2\rs_advanced_mode.hpp" />
+    <ClInclude Include="dependencies\librealsense\third-party\glad\glad\glad.h" />
+    <ClInclude Include="dependencies\librealsense\third-party\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="dependencies\librealsense\third-party\imgui\imgui.h" />
+    <ClInclude Include="dependencies\librealsense\third-party\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="dependencies\librealsense\third-party\stb_image_write.h" />
+    <ClInclude Include="dependencies\librealsense\third-party\tinyfiledialogs\tinyfiledialogs.h" />
+    <ClInclude Include="include\example.hpp" />
+    <ClInclude Include="include\rb_aux.h" />
+    <ClInclude Include="include\utilities.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

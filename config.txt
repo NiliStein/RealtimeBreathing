@@ -1,0 +1,32 @@
+#dimension: 2 for 2D or 3 for 3D. recommended: 2
+2
+#mode: D for distances, L for location, F for fourier, N for no graph
+D
+
+#distances: set to y to include a certain distance. set to n otherwise. recommended: left-mid3, right-mid3, mid2-mid3
+left-mid1 n
+left-mid2 n
+left-mid3 y
+left-right n
+right-mid1 n
+right-mid2 n
+right-mid3 y
+mid1-mid2 n
+mid1-mid3 n
+mid2-mid3 y
+
+#location: set to y to track the location of a certain sticker. set to n otherwise
+left n
+mid1 n
+mid2 y
+mid3 y
+right n
+
+#number of stickers: 4 or 5
+4
+
+#color of stickers: Y (yellow), B (blue) or G (green). recommended: Y
+Y
+
+#2D measure units: cm or pixel. recommended: pixel
+pixel
