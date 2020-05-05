@@ -21,9 +21,7 @@ extern void init_logFile(const char* filename, int num_of_stickers, std::string 
 extern std::ofstream logFile;
 extern bool CALC_2D_BY_CM;
 extern int NUM_OF_STICKERS;
-const char* config_err1 = "Warning: distance from mid1 was set to y, while number of stickers is 4. This distance will be disregarded.";
-const char* config_err2 = "Warning: location of mid1 was set to y, while number of stickers is 4. This location will be disregarded.";
-const char* config_errors[2] = { config_err1, config_err2 };
+
 
 // copied os.h because project does comile when including it (seems to be due to double inclusion of rendering.h)
 // *****	START of os.h copy	*****
@@ -60,8 +58,8 @@ int main(int argc, char * argv[]) try
 	rs2::align align_to_color(RS2_STREAM_COLOR);
 
 
-	int config_res;
-	Config user_cfg(CONFIG_FILEPATH, &config_res);
+	std::string config_err;
+	Config user_cfg(CONFIG_FILEPATH, &config_err);
 	FrameManager frame_manager(&user_cfg);
 	GraphPlot graph(user_cfg.mode, user_cfg.dimension, frame_manager.manager_start_time);
 
@@ -93,7 +91,7 @@ int main(int argc, char * argv[]) try
 		ImGui::Checkbox("Show Camera", &show_camera_stream);      // Checkbox: showing the camera stream
 		ImGui::Checkbox("Choose existing file", &run_on_existing_file);      // Checkbox: Choose an existing file to play and run anlysis for
 
-		if (config_res) ImGui::Text(config_errors[config_res - 1]);
+		if (config_err.compare("") != 0) ImGui::TextColored(ImVec4(1.0f, 0.0f, 1.0f, 1.0f), config_err.c_str());
 		
 			if (show_camera_stream && !run_on_existing_file) {
 			

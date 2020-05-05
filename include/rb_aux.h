@@ -75,8 +75,10 @@ public:
 	std::map<distances, bool> dists_included;
 	sticker_color color;
 
-	//ctor:
-	Config(const char* config_filepath, int* res);
+	// ctor:
+	Config(const char* config_filepath, std::string* config_err);
+	// set configuration to default. used in case of en illegal config file.
+	void set_default();
 };
 
 /*	BreathingFrameData class
